@@ -1,0 +1,37 @@
+<!-- cover.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>아테나 : 4%의 비밀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="upload-section">
+    <img src="assets/images/아테나.jpg" alt="아테나" style="width:300px; border-radius:10px; margin-bottom:20px;">
+    <h2>Password</h2>
+    <input type="password" id="password" class="answer-input" placeholder="암호 입력">
+    <button onclick="checkPassword()" class="answer-button">시작하기</button>
+    <p id="error" style="color: red; display: none;">암호가 틀렸습니다.</p>
+  </section>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      const correct = "ddora2"; // ✅ 여기 암호 설정
+      if (input === correct) {
+        window.location.href = "index.html";
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+  </script>
+    
+<!-- 🟢 구분선 -->
+<hr class="custom-hr">
+
+<!-- 🟢 제작자 문구 -->
+<section class="made2">&copy; Copyright 2025. 보또 All rights reserved. </section>
+
+</body>
+</html>

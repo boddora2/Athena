@@ -1,0 +1,590 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 메인 페이지에서만 가로 정렬 */
+.index-page .character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* 메인 페이지 주의 문구 스타일 */
+.main-notice {
+    font-size: 20px;  /* 제목 크기 키우기 */
+    font-weight: bold;  /* 굵게 */
+    color: #FFD700;  /* 골드 색상 (강조) */
+    text-align: center;  /* ✅ 가운데 정렬 유지 */
+    margin-top: 20px;  /* 위쪽 여백 */
+    margin-bottom: 5px;  /* 아래쪽 여백 */
+    display: block;  /* ✅ 블록 요소로 변경 → 가운데 정렬 정상 작동 */
+    padding-bottom: 5px;  /* 구분선과 간격 */
+    width: 100%;  /* ✅ 전체 너비 차지 */
+    border-bottom: none;  /* ✅ 밑줄 제거 */
+}
+
+/* 캐릭터 개별 스타일 */
+.character {
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 캐릭터 이미지 스타일 */
+.character img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* 메인 페이지 2, 3 이미지 스타일 */
+.page-image {
+    width: 250px;  /* 기존 세부 페이지와 동일한 크기 */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+.highlight {
+    color: #FFD700;
+    font-weight: bold;
+  }
+
+/* 제작자 문구 */
+.made {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-align: center;  /* ✅ 가운데 정렬 유지 */
+}
+
+/* 버튼 스타일 */
+button {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+/* 세부 페이지 이미지 크기 조정 */
+.character-page img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* 세부 페이지 왼쪽 정렬 */
+.character-page {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* "캐릭터(나이, 성별)" 부분만 가운데 정렬 */
+.character-page .character-info {
+    text-align: center; /* 가운데 정렬 */
+    font-size: 18px;
+    font-weight: normal; /* 기본 글씨체 */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* 세부 페이지 제목 (h2) 왼쪽 정렬 */
+.character-page h2 {
+    font-size: 22px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #FFD700;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+/* 세부 페이지 섹션 박스 */
+.character-page .section-box {
+    font-family: 'Nanum Gothic', sans-serif;  /* 원하는 글씨체로 변경 */
+    word-spacing: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* 구분선 스타일 */
+.character-page .custom-hr {
+    border: none;
+    height: 2px;
+    background: white;
+    margin: 30px 0;
+    width: 100%;
+}
+
+/* 플레이어 안내 - 부제목 스타일 */
+.character-page .player-notice-title {
+    font-size: 20px;  /* 제목 크기 키우기 */
+    font-weight: bold;  /* 굵게 */
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #FFD700;  /* 골드 색상 (강조) */
+    text-align: center;  /* ✅ 가운데 정렬 유지 */
+    margin-top: 20px;  /* 위쪽 여백 */
+    margin-bottom: 5px;  /* 아래쪽 여백 */
+    display: block;  /* ✅ 블록 요소로 변경 → 가운데 정렬 정상 작동 */
+    padding-bottom: 5px;  /* 구분선과 간격 */
+    width: 100%;  /* ✅ 전체 너비 차지 */
+    border-bottom: none;  /* ✅ 밑줄 제거 */
+}
+
+/* 플레이어 안내 - 내용 스타일 */
+.character-page .player-notice-text {
+    font-size: 16px;  /* 글자 크기 */
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: normal;  /* 기본 글씨체 */
+    text-align: center;  /* 가운데 정렬 */
+    margin-bottom: 20px;  /* 아래쪽 여백 */
+    letter-spacing: 1px; /* ✅ 글자 간격(자간) 추가 */
+}
+
+/* 플레이어 주의 문구 - 아래 글씨 스타일 */
+.character-page .player-notice-text2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: normal;  /* 기본 글씨체 */
+    text-align: center;  /* 가운데 정렬 */
+    margin-bottom: 20px;  /* 아래쪽 여백 */
+    letter-spacing: 1px; /* ✅ 글자 간격(자간) 추가 */ 
+    color: #FFD700;  /* 골드 색상 (강조) */
+    font-weight: bold;  /* 굵게 */    
+}
+
+/* 등장인물 이름의 굵은 글씨 제거 */
+.character-page .character-info li strong {
+    font-weight: bold; /* 이름의 굵은 글씨 제거 */
+}
+
+/* 등장인물 정보 리스트 스타일 */
+.character-page .character-info li {
+    margin-bottom: 10px;
+}
+
+/* 세부 페이지의 제작자 문구 */
+.character-page .made2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-align: center;  /* ✅ 가운데 정렬 유지 */
+    word-spacing: 0px;
+}
+
+/* 세부 페이지의 본문 글씨체와 양쪽 정렬 적용 */
+.character-page p {
+    font-family: 'Nanum Myeongjo', 'Times New Roman', serif;
+    word-spacing: 0px;
+    text-align: justify;  /* 양쪽 정렬 */
+    font-weight: normal;  /* 기본 글씨체 */
+    font-size: 12px;  /* 기본 글씨 크기 */
+    line-height: 1.8;  /* 줄 간격 설정 */
+    margin-bottom: 20px;  /* 각 문단 간격 */
+}
+.character-page ul {
+    font-family: 'Nanum Myeongjo', 'Times New Roman', serif;
+    word-spacing: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.character-page li {
+    font-family: 'Nanum Myeongjo', 'Times New Roman', serif;
+    word-spacing: 0px;
+    text-align: justify;  /* 양쪽 정렬 */
+    font-weight: normal;  /* 기본 글씨체 */
+    font-size: 12px;  /* 기본 글씨 크기 */
+    line-height: 1.8;  /* 줄 간격 설정 */
+    margin-bottom: 20px;  /* 각 문단 간격 */
+}
+
+/* 버튼 스타일 */
+button {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* 버튼을 위아래로 배치 */
+    align-items: center; /* 버튼을 가운데 정렬 */
+    gap: 12px; /* 버튼 간 간격 추가 */
+    margin-top: 20px; /* 버튼 위쪽 여백 추가 */
+}
+
+
+/* 기존 세부 페이지처럼 스타일 적용 */
+.section-box {
+    font-family: 'Nanum Myeongjo', 'Times New Roman', serif;
+    word-spacing: 0px;
+    background-color: rgba(255, 255, 255, 0.1); /* 연한 배경 추가 */
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* 🔹 "주의 문구"에는 배경을 적용하지 않도록 수정 */
+.main-notice {
+    background: none;  /* ✅ 기존과 동일하게 배경 없음 */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFD700;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/* 페이지 내 이미지 스타일 (1차 & 2차 대본 이미지) */
+.page-image {
+    width: 250px;  /* 기존 세부 페이지와 동일한 크기 */
+    height: auto;  
+    display: block;  
+    margin: 20px auto;  /* 가운데 정렬 */
+    border-radius: 10px;  /* 모서리 둥글게 */
+}
+
+/* 구분선 스타일 */
+.custom-hr {
+    border: none;
+    height: 2px;
+    background: white;
+    margin: 30px 0;
+    width: 100%;
+}
+
+/* 메인 페이지 2, 3의 본문 스타일을 세부 페이지와 동일하게 적용 */
+.index-page .section-box {    
+    font-family: 'Nanum Myeongjo', 'Times New Roman', serif;
+    word-spacing:0px;  /* 글자 간격을 좁게 조정 */
+    text-align: justify;  /* 양쪽 정렬 */
+    font-size: 12px;  /* 글씨 크기 동일하게 */
+    line-height: 1.8;  /* 줄 간격 동일하게 */
+    font-weight: normal;  /* 기본 폰트 굵기 맞추기 */
+}
+
+/* 메인 페이지 2,3의 제목(h3) 스타일 */
+.main-section-box h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    word-spacing: 0px;  /* 글자 간격을 좁게 조정 */
+    font-weight: bold; /* 굵기 설정 (선택) */
+    color: #FFD700;  /* 골드 색상 (강조) */
+    font-weight: bold;  /* 굵게 */ 
+}
+
+/* 중간 행동 단계 가로 정렬 */
+.mid-action-page .character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* 중간 행동 단계 주의 문구 스타일 */
+.mid-action-page .main-notice {
+    font-size: 20px;  /* 제목 크기 키우기 */
+    font-weight: bold;  /* 굵게 */
+    color: #FFD700;  /* 골드 색상 (강조) */
+    text-align: center;  /* ✅ 가운데 정렬 유지 */
+    margin-top: 20px;  /* 위쪽 여백 */
+    margin-bottom: 5px;  /* 아래쪽 여백 */
+    display: block;  /* ✅ 블록 요소로 변경 → 가운데 정렬 정상 작동 */
+    padding-bottom: 5px;  /* 구분선과 간격 */
+    width: 100%;  /* ✅ 전체 너비 차지 */
+    border-bottom: none;  /* ✅ 밑줄 제거 */
+}
+
+.mid-action-page .section-box {    
+    font-family: 'Nanum Gothic', sans-serif;
+    word-spacing: 0px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+.mid-action-page h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    word-spacing: 0px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* 주술 행동 설명 */
+.action-box {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-align: justify;  /* ✅ 양쪽 정렬 유지 */
+}
+
+/* 캐릭터 개별 스타일 */
+.mid-action-page .character {
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 캐릭터 이미지 스타일 */
+.mid-action-page .character img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* 🎨 캐릭터별 색상 스타일 */
+    .red { color: rgb(220, 50, 60); }       
+    .orange { color: rgb(220, 140, 80); } 
+    .yellow { color: rgb(230, 190, 90); } 
+    .green { color: rgb(100, 160, 100); }   
+    .blue { color: rgb(90, 150, 220); }     
+    .purple { color: rgb(160, 100, 190); } 
+    .pink { color: rgb(220, 140, 190); }
+
+/* 📜 대본 스타일 */
+.script-line {
+    display: flex;
+    gap: 10px;  /* 대사 이름과 텍스트 사이 간격 늘림 */
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 5px 0; /* 대사 간 여백 추가 */
+}
+
+.script-name {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 14px;  /* 이름도 살짝 키움 */
+    width: 80px;  /* 이름 부분 고정 크기 */
+    min-width: 50px;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.script-text {
+    font-family: 'Nanum Gothic', sans-serif;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;  /* 대사 크기 키움 */
+    color: white;
+}
+
+.direction {
+    font-style: italic;
+    color: rgb(200, 200, 200);
+    margin: 20px 0; /* 지문 위아래 간격 더 넓힘 */
+    font-size: 12px;  /* 지문 크기 줄임 */
+}
+
+.upload-section {
+    background: black; /* 배경색을 검은색으로 변경 */
+    color: white; /* 텍스트 색상도 흰색으로 변경 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; /* 적절한 너비 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+    text-align: center; /* 텍스트와 인라인 요소 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 내부 요소 가운데 정렬 */
+}
+
+.upload-section input[type="file"] {
+    display: block;  /* ✅ 블록 요소로 변경 (중앙 정렬) */
+    margin: 10px auto;  /* ✅ 자동 마진으로 가운데 정렬 */
+    text-align: center;
+}
+
+.upload-section .button {
+    width: 100%; /* 버튼 크기 조정 */
+    max-width: 200px; /* 너무 길어지지 않도록 제한 */
+    display: block; /* ✅ 블록 요소로 변경 */
+    margin: 10px auto; /* ✅ 자동 마진으로 중앙 정렬 */
+}
+
+    /* ✅ 입력칸과 버튼을 가운데 정렬 */
+    .answer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ✅ 입력칸 크기 키우기 */
+    .answer-input {
+        width: 80%; /* 너비 키우기 */
+        max-width: 300px; /* 최대 너비 제한 */
+        padding: 10px; /* 내부 여백 추가 */
+        font-size: 18px; /* 글자 크기 키우기 */
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* ✅ 확인 버튼 스타일 변경 */
+    .answer-button {
+        background-color: #4CAF50; /* 초록색 배경 */
+        color: white; /* 흰색 글씨 */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 120px; /* 버튼 폭 줄이기 */
+        text-align: center;
+    }
+
+    .answer-button:hover {
+        background-color: #45a049; /* 마우스 올릴 때 색 변경 */
+    }
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 반투명 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: #111; /* 검은 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 진짜 중앙 정렬 */
+    background: rgba(0, 0, 0, 0.8); /* 더 어두운 배경 */
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 480px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  }
+  
+  .modal-content {
+    background-color: #111;
+    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+  }
+  
+  .modal-content p {
+    white-space: pre-line;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .modal-buttons button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #666;
+  }
+
+  

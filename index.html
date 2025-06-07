@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>담당 인물 설정</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function confirmCharacter(characterName, characterPage) {
+            let answer = confirm(characterName + " 담당 플레이어가 맞습니까?");
+            if (answer) {
+                window.location.href = 'character/' + characterPage; // 해당 캐릭터 페이지로 이동
+            }
+        }
+    </script>      
+</head>
+<body class="index-page">  <!-- 🟢 여기 class="index-page" 추가! -->
+
+    <h1>아테나:4%의 비밀 <br> </h1>
+
+<!-- 🟢 주의 문구 -->
+<section class="main-notice">
+    <p><strong>⚠️ 주의 ⚠️<br><br>본인이 담당할 캐릭터의<br><br>설정서만 확인해 주세요.</strong></p>
+</section>
+
+    <div class="character-container">
+        <div class="character">
+            <img src="assets/images/백인하.png" alt="백인하">
+            <p>백인하(38세, 남성)</p>
+            <button onclick="confirmCharacter('백인하', 'character1.html')">백인하 설정서 보기</button>
+        </div>
+
+        <div class="character">
+            <img src="assets/images/백설희.png" alt="백설희">
+            <p>백설희(18세, 여성)</p>
+            <button onclick="confirmCharacter('백설희', 'character2.html')">백설희 설정서 보기</button>
+        </div>
+
+        <div class="character">
+            <img src="assets/images/전하연.png" alt="전하연">
+            <p>전하연(18세, 여성)</p>
+            <button onclick="confirmCharacter('전하연', 'character3.html')">전하연 설정서 보기</button>
+        </div>
+
+        <div class="character">
+            <img src="assets/images/권윤하.png" alt="권윤하">
+            <p>권윤하(18세, 여성)</p>
+            <button onclick="confirmCharacter('권윤하', 'character4.html')">권윤하 설정서 보기</button>
+        </div>
+
+        <div class="character">
+            <img src="assets/images/한나라.png" alt="한나라">
+            <p>한나라(18세, 여성)</p>
+            <button onclick="confirmCharacter('한나라', 'character5.html')">한나라 설정서 보기</button>
+    </div>
+
+<!-- 🟢 구분선 -->
+<hr class="custom-hr">
+
+<!-- 🟢 제작자 문구 -->
+<section>
+    <p class="made"> &copy; Copyright 2025. 보또 All rights reserved. </p>
+</section>
+
+</body>
+</html>
