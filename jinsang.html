@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자세한 사건의 진상</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+    <script>
+        function startEnding() {
+          const confirm1 = confirm("작가의 코멘터리(TMI)가 준비되어 있습니다.\n확인하시겠습니까?");
+              window.location.href = "TMI.html";
+            }
+      </script>
 </head>
 <body class="character-page">
 
@@ -234,6 +247,10 @@
 <p class="section-break">이하나의 사망 소식을 접한 5명은 모두 자신을, 혹은 자신이 아끼는 사람을 지키기 위해 경찰에게 거짓 증언을 했다.</p>
 
     </section>
+
+<div class="button-wrapper">
+<button onclick="startEnding()">TMI 확인</button>
+</div> 
     
 <!-- 🟢 구분선 -->
 <hr class="custom-hr">
